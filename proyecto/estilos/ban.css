@@ -1,0 +1,149 @@
+.ban {
+    background-image: url('../img/ban1.jpg');
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 5% center;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ban-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: right;
+
+        & h4 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        & h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        & p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        & button {
+            background-color: #ffffff;
+            color: black;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        & button:hover {
+            background-color: #c4c4c4;
+        }
+
+    }
+}
+
+/* Desktop medio */
+@media (max-width: 1200px) {
+
+    .banner {
+        padding: 0 60px;
+
+        .banner-content {
+            width: 55%;
+        }
+    }
+}
+/* Tablets */
+@media (max-width: 992px) {
+    .ban{
+        height: 85vh;
+        padding: 0 60px;
+    }
+    
+    .ban .ban-content {
+        width: 60%;
+    }
+    
+    .ban .ban-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .ban .ban-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .ban .ban-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ban {
+        height: 70vh;
+        padding: 0 40px;
+        justify-content: center;
+        background-position: top center;
+    }
+    
+    .ban .ban-content {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .ban .ban-content h4 {
+        font-size: 0.9rem;
+    }
+    
+    .ban .ban-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .ban .ban-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+    .ban {
+        height: 60vh;
+        padding: 0 20px;
+        background-position: 55% center;
+    }
+    
+    .ban .ban-content {
+        width: 100%;
+    }
+    
+    .ban .ban-content h4 {
+        font-size: 0.8rem;
+    }
+    
+    .ban .ban-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .ban .ban-content h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .ban .ban-content p {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .ban .ban-content button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
